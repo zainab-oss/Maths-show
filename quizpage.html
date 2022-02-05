@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Let's start the Quiz</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="new_java.js"></script>
+</head>
+
+<body id="tpage">
+    <h4 id="player1_name"></h4> <span id="player1_score"></span>
+    <br>
+    <h4 id="player2_name"></h4> <span id="player2_score"></span>
+    <div class="container">
+        <center>
+            <h2 style="color: white;">The Maths Quiz game has started</h2>
+            <br><br> 
+            <h1>Question turn:</h1> <span><h1 id="questioner">fg</h1></span>
+            <h1>Answer turn:</h1> <span><h1 id="answerer"></h1></span>
+            <div id="output">
+                <label id="Qs"></label><br>
+                <input type="text" id="input1"> <br>
+                <br>
+                <button class="btn btn-info">Check</button>
+            </div>
+            <br>
+            <br>
+            <h2>Number 1</h2>
+            <input style="width: 35%;" type= "number" id="number_1" placeholder="type your first number">
+            <br>
+            <h2>
+                Number 2
+            </h2>
+            <input style="width: 35%;" type="number" id="number_2" placeholder="type your second number">
+            <br><br>
+            <button style="width: 40%; height: 45%;" onclick="send()" class="btn btn-success">Send</button>
+       </center>
+    </div>
+</body>
